@@ -1,0 +1,36 @@
+aside {
+  width: 220px;
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  display: block;
+  unicode-bidi: isolate;
+  height: 490vh; /* Add this line */
+  box-sizing: border-box; /* Add this line to handle padding */
+}
+aside h2 {
+  margin-bottom: 30px;
+}
+
+aside nav a {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+aside nav a:hover {
+  background-color: #0055aa;
+}
+aside h2 a.home {
+  color: inherit;       /* Use the same text color as the heading */
+  text-decoration: none; /* Remove underline */
+  font-weight: inherit; /* Keep same weight as the h2 */
+  cursor: pointer;      /* Show pointer on hover */
+}
+
+aside h2 a.home:hover {
+  text-decoration: none; /* Optional: add underline on hover */
+}

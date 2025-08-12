@@ -1,0 +1,20 @@
+<section class="update-education">
+  <h1>Update Education</h1>
+  <form [formGroup]="reactiveForm" (ngSubmit)="updateSelectedEducation()">
+    <label for="select-edu">Select Education</label>
+    <select id="select-edu" (change)="selectEducation($event)">
+      <option>-- Choose a education --</option>
+      <option *ngFor="let education of educations" [value]="education._id!">
+          {{education.title}}
+      </option>
+    </select>
+
+    <label for="update-title">Update Title</label>
+    <input type="text" id="update-title" formControlName="title">
+
+    <label for="update-desc">Update Description</label>
+    <input type="text" id="update-desc" formControlName="description">
+
+    <button type="submit" class="update-btn">Update Education</button>
+  </form>
+</section>

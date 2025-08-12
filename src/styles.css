@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f8fbff;
+}
+
+/* Global container for dashboard layout */
+.dashboard-container {
+  display: flex;
+}
+
+/* Sidebar base style */
+.sidebar {
+  width: 250px;
+  background-color: #003366;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Content base style */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.app-container {
+  display: flex;
+  align-items: flex-start; /* Align top */
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Reset any accidental top margin on headings or components */
+.main-content > * {
+  margin-top: 0 !important;
+}
+
+/* Card styling for content */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+h1 {
+    margin-bottom: 20px;
+    color: #003366;
+}

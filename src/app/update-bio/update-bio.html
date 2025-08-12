@@ -1,0 +1,6 @@
+<section class="update-bio-card" [formGroup]="reactiveForm">
+  <h1>Update Bio</h1>
+  <label for="bio" class="labelBio">Bio</label>
+  <textarea id="bio" placeholder="Write your bio..." class="textBox" formControlName="bio"></textarea>
+  <button class="saveBtn" (click)="saveBio()">Save Bio</button>
+</section>

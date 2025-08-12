@@ -1,0 +1,7 @@
+<form class="card" [formGroup]="reactiveForm" (ngSubmit)="savePhilosophy()">
+    <h2>Update Philosophy</h2>
+    <label for="philosophy">Philosophy</label>
+    <input type="text" id="philosophy" placeholder="Write your philosophy..." formControlName="philosophy">
+    <button type="submit">Save Philosophy</button>
+</form>
+

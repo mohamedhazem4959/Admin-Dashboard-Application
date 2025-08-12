@@ -1,0 +1,12 @@
+<section class="add-education">
+  <h1>Add New Education</h1>
+  <form [formGroup]="reactiveForm" (ngSubmit)="addNewEducation()">
+    <label for="school">Title</label>
+    <input type="text" id="school" placeholder="Education name" formControlName="title">
+
+    <label for="degree">Description</label>
+    <input type="text" placeholder="e.g. B.Sc. in Computer Science" formControlName="description">
+
+    <button type="submit">Add Education</button>
+  </form>
+</section>

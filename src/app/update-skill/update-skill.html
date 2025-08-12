@@ -1,0 +1,20 @@
+<section class="update-skill">
+  <h1>Update Skill</h1>
+  <form [formGroup]="reactiveForm" (ngSubmit)="updatedSelectedSkill()">
+    <label for="select-skill">Select Skill</label>
+    <select id="select-skill" (change)="selectSkill($event)">
+      <option>-- Choose a Skill --</option>
+      <option *ngFor="let skill of skills" [value]="skill._id!">
+          {{skill.title}}
+      </option>
+    </select>
+
+    <label for="update-skill-title">Update Title</label>
+    <input type="text" id="update-skill-title" formControlName="title">
+
+    <label for="update-skill-desc">Update Description</label>
+    <input type="text" id="update-skill-desc" formControlName="description">
+
+    <button type="submit" class="update-btn">Update Skill</button>
+  </form>
+</section>

@@ -1,0 +1,12 @@
+    <section class="add-project">
+      <h1>Add New Project</h1>
+      <form [formGroup]="reactiveForm" (ngSubmit)="addNewProject()">
+        <label for="project-title">Project Title</label>
+        <input type="text" id="project-title" placeholder="e.g. Portfolio Website" formControlName="title">
+    
+        <label for="project-description">Description</label>
+        <textarea id="project-description" rows="4" placeholder="Describe your project" class="textArea" formControlName="description"></textarea>
+    
+        <button type="submit">Add Project</button>
+      </form>
+    </section>

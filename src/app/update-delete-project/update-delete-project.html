@@ -1,0 +1,27 @@
+<section class="update-project">
+  <h1>Update/Delete Project</h1>
+  <form [formGroup]="reactiveForm" (ngSubmit)="updatedSelectedProject()">
+    <label for="select-project">Select Project</label>
+    <select id="select-project" (change)="selectProject($event)">
+      <option>-- Choose a Project --</option>
+      <option *ngFor="let project of projects" [value]="project._id">
+        {{ project.title }}
+      </option>
+    </select>
+
+    <label for="update-project-title">Update Title</label>
+    <input type="text" id="update-project-title" formControlName="title">
+
+    <label for="update-project-desc">Update Description</label>
+    <textarea id="update-project-desc" rows="3" formControlName="description"></textarea>
+
+    <div class="row">
+      <button type="button" class="update-btn">Update Project</button>
+      <button type="button" class="delete-btn" (click)="deleteSelectedProject()">Delete Project</button>
+    </div>
+  </form>
+</section>
+<!-- //for let project of projects
+//<div (click)="select(project._id)" >
+
+</div> -->

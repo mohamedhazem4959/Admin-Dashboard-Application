@@ -1,0 +1,12 @@
+<section class="add-skill">
+  <h1>Add New Skill</h1>
+  <form [formGroup]="reactiveForm" (ngSubmit)="addNewEducation()">
+    <label for="skill-name">Skill</label>
+    <input type="text" id="skill-name" placeholder="e.g. Node.js" formControlName="title">
+
+    <label for="skill-description">Description</label>
+    <input type="text" id="skill-description" placeholder="e.g. REST APIs, Express.js, etc." formControlName="description">
+
+    <button type="submit">Add Skill</button>
+  </form>
+</section>
